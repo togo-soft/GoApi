@@ -49,7 +49,7 @@ func (g *GoVersionRepo) Fetch(params *models.GoParams) ([]models.GoVersion, erro
 	}
 	//数据项为空
 	if len(list) == 0 {
-		return nil,errors.New("找不到该版本号:"+params.Version)
+		return nil, errors.New("找不到该版本号:" + params.Version)
 	}
 	//从版本中选择下属分支
 	var filter = make(map[string]interface{}, 4)
