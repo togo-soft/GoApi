@@ -1,0 +1,6 @@
+environments:
+  debug: true
+  server: 0.0.0.0:5000
+  db_type: sqlite3
+  dsn: data.db
+  db_debug: true

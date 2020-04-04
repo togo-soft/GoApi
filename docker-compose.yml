@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  project:
+    build: ./
+    restart: always
+    container_name: go_api
+    volumes:
+      - "./:/Project"
+    ports:
+      - "80:5000"
+      - "443:443"
