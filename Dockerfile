@@ -6,6 +6,6 @@ WORKDIR /Project
 
 RUN go env -w GOPROXY=https://goproxy.cn,direct
 
-EXPOSE 5000
+EXPOSE 80
 
 ENTRYPOINT ["go","run","main.go"]
