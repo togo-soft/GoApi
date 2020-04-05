@@ -7,5 +7,5 @@ services:
     volumes:
       - "./:/Project"
     ports:
-      - "80:80"
+      - "80:7125"
       - "443:443"
